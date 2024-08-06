@@ -1,0 +1,146 @@
+.header-menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    background-image: url(../img/Menu.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+}
+
+.header {
+    background-color: var(--background-main);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container-image {
+    padding: 1em;
+}
+
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container-button:checked ~ .menu-list {
+    display: block;
+
+}
+
+.container-button {
+    display: none;
+}
+
+.menu-list-tittle, .menu-list-item {
+    padding: 1em;
+    background-color: var(--background-main);
+}
+
+.menu-list-tittle {
+    color: var(--tittle-color);
+    font-weight: 700;
+}
+
+.menu-list-link {
+    background: var(--blue-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+.container-tittle {
+    display: none;
+}
+
+.options {
+    display: none;
+}
+
+.container-text {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .container-tittle, .container-image-strong {
+        font-family: var(--font-second);
+        font-size: 30px;
+    }
+
+    .container-tittle {
+        font-weight: 400;
+        display: block;
+    }
+
+    .container-tittle-strong {
+        font-weight: 700;
+    }
+
+    .options {
+        display: flex;
+    }
+
+    .options-item {
+        padding: 0 1em;
+        text-transform: uppercase;
+    }
+
+    .options-link {
+        text-decoration: none;
+        color: var(--black-link);
+    }
+
+    .container-image-invisible {
+        display: none;
+    }
+
+    .header-menu-hamburguer {
+        display: none;
+    }
+
+    .options-button:checked ~ .menu-list {
+        display: block;
+        width: auto;
+    }
+
+    .options-button {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1728px) {
+    .container-text {
+        display: block;
+    }
+
+    .container-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--black-link);
+        font-size: 20px;
+    }
+
+    .header {
+        padding-inline: 2em;
+    }
+
+    .options {
+        margin-right: auto;
+    }
+
+    .container-tittle {
+        margin-right: 1.5em;
+    }
+
+}

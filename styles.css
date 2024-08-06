@@ -1,0 +1,25 @@
+@import url(./styles/header.css);
+@import url(./styles/banner.css);
+@import url(./styles/slider.css);
+@import url(./styles/topics.css);
+@import url(./styles/contact.css);
+@import url(./styles/footer.css);
+
+:root {
+    --background-color: #EBECEE;
+    --background-main: #FFFFFF;
+    --tittle-color: #EB9B00;
+    --blue-gradient: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --font-main: "Poppins";
+    --subtittle-color: #002F52;
+    --font-second: "Josefin Sans";
+    --black-link: #000;
+    --grey-text: #474646;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-main);
+    font-size: 16px;
+    font-weight: 400;
+}
